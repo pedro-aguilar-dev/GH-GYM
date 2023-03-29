@@ -1,0 +1,159 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+
+}
+
+
+
+.containerSlide {
+
+    padding: 100px 0 0 0;
+    margin-top: -7rem;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    background: #18181C;
+}
+
+/* Slideshow container */
+.content-slide {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.imgslide {
+    display: none;
+}
+
+.imagem {
+    vertical-align: middle;
+    width: 100%;
+    height: 50rem;
+}
+
+.voltar,
+.proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 254, 224);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.voltar:hover,
+.proximo:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-left: 2.3rem;
+}
+
+.content-slide .numeroslide {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* resposive */
+
+@media screen and (max-width: 800px) {
+
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+    }
+
+    .proximo {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .text {
+        margin-left: -4rem;
+        margin-bottom: 2rem;
+    }
+
+    .imagem {
+        vertical-align: middle;
+        width: 100%;
+        height: 50rem;
+        margin-left: 0;
+    }
+
+
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.containerSlide .pagina {
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 4.5rem;
+}
+
+.pagina .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+}
+
+.pagina .active,
+.pagina .dot:hover {
+    background-color: #ce0000;
+}
