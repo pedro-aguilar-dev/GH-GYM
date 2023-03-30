@@ -70,7 +70,7 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin-left: 2.3rem;
+
 }
 
 .content-slide .numeroslide {
@@ -95,9 +95,17 @@ body {
     }
 
     .text {
-        margin-left: -4rem;
+        margin-left: -5.4rem;
         margin-bottom: 2rem;
     }
+
+    .containerSlide .pagina {
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+
 
     .imagem {
         vertical-align: middle;
@@ -139,7 +147,7 @@ body {
 .containerSlide .pagina {
     text-align: center;
     padding-top: 20px;
-    margin-left: 4.5rem;
+
 }
 
 .pagina .dot {
