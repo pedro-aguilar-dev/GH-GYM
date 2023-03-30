@@ -149,8 +149,67 @@ header #menu {
     margin-left: 1rem;
 }
 
+.modalidade {
+    min-height: 100vh;
+    background-color: #18181C;
 
+}
 
+.modalidade .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #18181C;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+
+}
+
+.modalidade .box-container .box {
+    text-align: center;
+    width: 30rem;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: white;
+    /*border: .40rem solid #EB2139;*/
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.modalidade .box-container .box i {
+    font-size: 5rem;
+    padding: 2rem 0;
+    color: var(--blue);
+}
+
+.modalidade .box-container .box h3 {
+    font-size: 2rem;
+    color: #444;
+}
+
+.modalidade .box-container .box p {
+    font-size: 1.2rem;
+    color: #666;
+    padding: 1rem;
+}
+
+.modalidade .box-container .box:hover {
+    background: #444;
+}
+
+.modalidade .box-container .box:hover i {
+    color: #fff;
+}
+
+.modalidade .box-container .box:hover h3 {
+    color: #fff;
+}
+
+.modalidade .box-container .box:hover p {
+    color: #eee;
+}
 
 /* media queries  */
 
