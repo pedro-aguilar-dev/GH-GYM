@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+:root {
+    --blue: #EB2139;
+    --cor: #18181C;
+    --corBorda: #EB2139;
+}
+
+.light-theme {
+    --cor: rgb(237, 234, 234);
+    --corBorda: white;
+}
+
+* {
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+
+.containerContato {
+    width: 100%;
+    height: 54vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor);
+}
+
+.containerContato .contatoCliente {
+    background: #fff;
+    width: 600px;
+    border-radius: 02px;
+
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.containerContato .contatoCliente form {
+    padding: 0 1rem;
+}
+
+.containerContato .contatoCliente form input,
+textarea {
+    width: 95%;
+    margin: 05px 0 0 10px;
+    padding: 07px 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    border-radius: 05px;
+}
+
+.containerContato .contatoCliente h2 {
+    margin: 1.5rem;
+
+    width: 25%;
+}
+
+.containerContato .contatoCliente label {
+    display: block;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.containerContato .contatoCliente button {
+    margin: 2rem 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    background: #EB2139;
+    font-size: 1.6rem;
+    border-radius: 05px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.containerContato .contatoCliente button:hover {
+    background: #18181C;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.containerContato .contatoEmpresa {
+    background: #fff;
+    border-radius: 02px;
+    border-top: 04px solid var(--corBorda);
+    width: 40rem;
+    margin: 0 10px;
+}
+
+.containerContato .contatoEmpresa ul {
+    list-style: none;
+}
+
+.containerContato .contatoEmpresa ul li {
+    margin: 1.5rem 1rem;
+}
+
+.containerContato .contatoEmpresa ul li i {
+    font-size: 1.4rem;
+    color: #EB2139;
+}
+
+.containerContato .contatoEmpresa ul li strong {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.containerContato .contatoEmpresa ul li p {
+    font-size: 14px;
+    margin-left: 35px;
+}
+
+.containerContato .contatoEmpresa .map iframe {
+    width: 90%;
+    height: 280px;
+    margin: 0 1rem;
+}
+
+@media (max-width: 1037px) {
+
+    .containerContato .contatoCliente,
+    .contatoEmpresa {
+        width: 80%;
+        margin: 10px 0px;
+    }
+
+    .containerContato .contatoCliente h2 {
+        width: 50%;
+    }
+
+    .containerContato {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerContato .contatoEmpresa {
+        width: 75%;
+        margin: 10px 0px;
+    }
+
+    .containerContato .contatoCliente h2 {
+        width: 50%;
+    }
+
+    .containerContato {
+        height: auto;
+    }
+}

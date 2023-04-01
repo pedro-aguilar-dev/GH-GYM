@@ -2,6 +2,11 @@
 
 :root {
     --blue: #EB2139;
+    --cor: #18181C;
+}
+
+.light-theme {
+    --cor: rgb(160, 153, 153);
 }
 
 * {
@@ -45,7 +50,7 @@ html {
     text-align: center;
     padding: 1rem;
     padding-top: 6.5rem;
-    background-color: #18181C;
+    background-color: var(--cor);
 }
 
 .heading span {
@@ -150,8 +155,7 @@ header #menu {
 }
 
 .modalidade {
-    min-height: 100vh;
-    background-color: #18181C;
+    background-color: var(--cor);
 
 }
 
@@ -160,7 +164,7 @@ header #menu {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #18181C;
+    background-color: var(--cor);
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
@@ -210,6 +214,170 @@ header #menu {
 .modalidade .box-container .box:hover p {
     color: #eee;
 }
+
+
+
+
+.plano {
+
+    background: var(--cor);
+}
+
+.plano .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plano .box-container .box {
+    margin: 2rem;
+    background: #fff;
+    text-align: center;
+    width: 30rem;
+    border: .40rem solid #EB2139;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.plano .box-container .box .titulo {
+    background: var(--blue);
+    color: #fff;
+    font-size: 2.7rem;
+    padding: 1rem 0;
+}
+
+.plano .box-container .box .preco {
+    color: #444;
+    font-size: 3.5rem;
+    padding: 1.5rem 0;
+}
+
+.plano .box-container .box .preco span {
+    font-size: 2rem;
+}
+
+.plano .box-container .box .lista {
+    text-align: left;
+    list-style: none;
+    padding: 1rem 0;
+    padding-left: 8rem;
+}
+
+.plano .box-container .box .lista li {
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: #666;
+}
+
+.plano .box-container .box .lista li .fa-check {
+    padding: 0 .3rem;
+    color: lime;
+}
+
+.plano .box-container .box .lista li .fa-times {
+    padding: 0 .3rem;
+    color: tomato;
+}
+
+.plano .box-container .box .btn {
+    margin-bottom: 3rem;
+}
+
+.plano .box-container .box:hover {
+    transform: scale(1.02);
+}
+
+
+.footer {
+    background: white;
+
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+    margin: 2rem;
+    flex: 1 1 30rem;
+}
+
+.footer .box-container .box h3 {
+    color: var(--blue);
+    font-size: 2.5rem;
+}
+
+.footer .box-container .box p {
+    color: #333;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box:nth-child(2) {
+    text-align: center;
+}
+
+.footer .box-container .box a {
+    color: #333;
+    font-size: 1.8rem;
+    padding: .5rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover {
+    text-decoration: underline;
+}
+
+.footer .box-container .box form {
+    display: flex;
+    width: 100%;
+}
+
+.footer .box-container .box form input {
+    height: 4.5rem;
+    width: 100%;
+    background: #fff;
+    padding: 0 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    border: none;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .2);
+}
+
+.footer .box-container .box form button {
+    height: 4.5rem;
+    width: 6rem;
+    line-height: 4rem;
+    text-align: center;
+    background: var(--blue);
+    font-size: 1.7rem;
+    color: #fff;
+    border: none;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.footer .box-container .box form button:hover {
+    background: #333;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    background: #444;
+    color: #ccc;
+}
+
+.footer .credit a {
+    color: #fff;
+}
+
+
+
+
 
 /* media queries  */
 
