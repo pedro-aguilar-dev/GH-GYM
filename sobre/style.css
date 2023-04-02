@@ -87,6 +87,8 @@ body {
 }
 
 
+
+
 .linha .conteudoContainer span.textWrapper span {
     display: inline-block;
     background: #d31c3b;
@@ -117,6 +119,8 @@ body {
     font-size: 20px;
     line-height: 25px;
     padding-bottom: 25px;
+    text-transform: initial;
+    text-align:justify;
 
 }
 

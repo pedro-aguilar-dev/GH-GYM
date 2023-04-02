@@ -30,18 +30,16 @@
 
     <div class="homepage">
         <nav class="nav container" id="nav">
-            <h2 class="nav__logo">Logo.</h2>
+            <img class="nav__logo" src="./imgs/Logo Gh Gym Arnold Branco.png" height="120rem" width="120rem">
 
             <ul class="nav__links">
 
+
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Inicio</a>
+                    <a href="#contato" class="nav__link">Contato</a>
                 </li>
                 <li class="nav__item">
                     <a href="#sobre" class="nav__link">Sobre</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#unidades" class="nav__link">Unidades</a>
                 </li>
                 <li class="nav__item">
                     <a href="#plano" class="nav__link">Planos</a>
@@ -52,10 +50,19 @@
                 </li>
 
                 <li class="nav__item">
-                    <a href="./IMC/index.html" class="nav__link">Calculadora</a>
+                    <a href="./IMC/index.html" class="nav__link">IMC</a>
+                </li>
+
+
+                <li class="nav__item">
+                    <a href="#unidades" class="nav__link">Unidades</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#modalidade" class="nav__link">Modalidades</a>
                 </li>
                 <li class="nav__item">
-                    <img src="./imgs/moon.png" id="icon">
+                    <img src="./imgs/sun.png" id="icon">
                 </li>
 
             </ul>
@@ -71,7 +78,7 @@
         </nav>
 
         <div class="typed">
-            <h1>GH Academia <span class="type"></span></h1>
+            <h1>GH GYM <span class="type"></span></h1>
         </div>
 
         <div class="social">
@@ -90,7 +97,9 @@
     <script type="text/javascript">
         var typed = new Typed('.type', {
             strings: [
-                'Slogan',
+                'Sem',
+                "treino",
+                "fofo"
 
             ],
             loop: true,
@@ -100,6 +109,16 @@
         });
 
 
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("light-theme");
+        }
+
+
+        var btn = document.getElementsByClassName("nav__hamburguer");
+        btn.onclick = function () {
+            document.body.classList.remove("typed");
+        }
 
     </script>
 
@@ -117,13 +136,13 @@
                         <span class="textWrapper">
                             <span></span>Sobre Nós
                         </span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id reiciendis quo recusandae?
-                            Sapiente
-                            rem omnis, nam consequuntur dignissimos libero maiores, voluptates quod accusamus doloribus
-                            fuga
-                            ducimus quibusdam tenetur placeat ratione quidem soluta laboriosam animi in repellat qui
-                            mollitia
-                            atque.</p>
+                        <p>Inauguramos em 2015 na cidade de Santo André, estado de São Paulo, com o propósito de acabar
+                            com as desculpas para não treinar e nos tornar a rede com o melhor custo benefício do
+                            mercado.
+
+                            Em 2016, lapidamos o conceito da marca, nos tornando: GH GYM, a sua academia. Uma rede com
+                            equipamentos modernos, estrutura de ponta, equipe treinada, horário de atendimento estendido
+                            e grade de aulas com mais de 30 modalidades como danças, lutas, ginástica.</p>
                         <a href="./matricula/index.html">Matricule-se</a>
                     </div>
                 </div>
@@ -211,6 +230,8 @@
 
     </section>
 
+
+    <!--modalidades-->
     <section class="modalidade" id="modalidade">
 
         <h1 class="heading"><span>Modalidades</span></h1>
@@ -218,43 +239,43 @@
         <div class="box-container">
 
             <div class="box">
-                <i class="fas fa-sync-alt"></i>
-                <h3>teste</h3>
+                <img src="./imgs/gym.gif" height="60rem" width="60rem">
+                <h3>Musculação I</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
             <div class="box">
-                <i class="fas fa-headset"></i>
-                <h3>teste</h3>
+                <img src="./imgs/gym2.gif" height="60rem" width="60rem">
+                <h3>Crossfit</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
             <div class="box">
-                <i class="fas fa-cogs"></i>
-                <h3>teste</h3>
+                <img src="./imgs/gym3.gif" height="60rem" width="60rem">
+                <h3>Musculação II</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
             <div class="box">
-                <i class="fas fa-shield-alt"></i>
-                <h3>teste</h3>
+                <img src="./imgs/exercise (4).png" height="60rem" width="60rem">
+                <h3>HIT</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
             <div class="box">
-                <i class="far fa-bell"></i>
-                <h3>teste</h3>
+                <img src="./imgs/zumba.png" height="60rem" width="60rem">
+                <h3>Zumba</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
             <div class="box">
-                <i class="far fa-credit-card"></i>
-                <h3>teste</h3>
+                <img src="./imgs/sport.png" height="60rem" width="60rem">
+                <h3>Muay Thai</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
@@ -263,6 +284,7 @@
 
     </section>
 
+    <!--planos-->
     <section class="plano" id="plano">
 
         <h1 class="heading"><span>Planos</span></h1>
@@ -270,41 +292,41 @@
         <div class="box-container">
 
             <div class="box">
-                <h3 class="titulo">teste</h3>
+                <h3 class="titulo">Plano Basic</h3>
                 <h3 class="preco">$10<span>mes</span></h3>
                 <ul class="lista">
-                    <li> <i class="fas fa-check"></i>teste</li>
-                    <li> <i class="fas fa-check"></i>teste</li>
-                    <li> <i class="fas fa-times"></i> teste</li>
-                    <li> <i class="fas fa-times"></i>teste</li>
-                    <li> <i class="fas fa-times"></i>teste</li>
+                    <li> <i class="fas fa-check"></i>Sem multas ou taxa</li>
+                    <li> <i class="fas fa-check"></i>Acesso a todas as aulas coletivas</li>
+                    <li> <i class="fas fa-times"></i>Leve 2 amigos para treinar</li>
+                    <li> <i class="fas fa-times"></i>Acesso total a estrutura</li>
+                    <li> <i class="fas fa-times"></i>Sem restrição de horário</li>
                 </ul>
                 <a href="#"><button class="btn">Selecionar</button></a>
             </div>
 
             <div class="box">
-                <h3 class="titulo">teste</h3>
+                <h3 class="titulo">Plano Gold</h3>
                 <h3 class="preco">$20<span>mes</span></h3>
                 <ul class="lista">
-                    <li> <i class="fas fa-check"></i>teste</li>
-                    <li> <i class="fas fa-check"></i>teste </li>
-                    <li> <i class="fas fa-check"></i>teste</li>
-                    <li> <i class="fas fa-times"></i>teste</li>
-                    <li> <i class="fas fa-times"></i>teste</li>
+                    <li> <i class="fas fa-check"></i>Sem restrição de horário</li>
+                    <li> <i class="fas fa-check"></i>Leve até 5 amigos para treinar</li>
+                    <li> <i class="fas fa-check"></i>1 ano de fidelidade</li>
+                    <li> <i class="fas fa-times"></i>Sem taxa de matricula</li>
+                    <li> <i class="fas fa-times"></i>Acesso a eventos</li>
                 </ul>
                 <a href="#"><button class="btn">Selecionar</button></a>
 
             </div>
 
             <div class="box">
-                <h3 class="titulo">teste</h3>
+                <h3 class="titulo">Plano Diamond</h3>
                 <h3 class="preco">$30<span>mes</span></h3>
                 <ul class="lista">
-                    <li> <i class="fas fa-check"></i>teste</li>
-                    <li> <i class="fas fa-check"></i>teste</li>
-                    <li> <i class="fas fa-check"></i>teste</li>
-                    <li> <i class="fas fa-check"></i>teste</li>
-                    <li> <i class="fas fa-check"></i>teste</li>
+                    <li> <i class="fas fa-check"></i>Sem taxa de matricula</li>
+                    <li> <i class="fas fa-check"></i>Acesso total a estrutura</li>
+                    <li> <i class="fas fa-check"></i>Aulas individuais e coletivas</li>
+                    <li> <i class="fas fa-check"></i>Leve 8 amigos para treinar</li>
+                    <li> <i class="fas fa-check"></i>Acesso a eventos</li>
                 </ul>
                 <a href="#"><button class="btn">Selecionar</button></a>
             </div>
@@ -313,19 +335,21 @@
 
     </section>
 
-    <h1 class="heading"><span>Contato</span></h1>
+
+    <!--contato-->
+    <h1 class="heading" id="contato"><span>Contato</span></h1>
     <div class="containerContato">
         <div class="contatoEmpresa">
             <ul>
                 <li>
                     <i class="fa-solid fa-location-dot"></i>
                     <strong>Endereço</strong>
-                    <p>Lorem ipsum dolor sit amet co</p>
+                    <p> R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000</p>
                 </li>
                 <li>
                     <i class="fa-solid fa-envelope"></i>
                     <strong>Email:</strong>
-                    <p>info@example.com</p>
+                    <p>contato@GHGYM.com</p>
                 </li>
                 <li>
                     <i class="fa-solid fa-envelope"></i>
@@ -335,8 +359,8 @@
             </ul>
             <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sbg!4v1666857692914!5m2!1sen!2sbg"
-                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14633.299089757642!2d-46.7277865!3d-23.5208186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1680457860802!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -356,7 +380,7 @@
         </div>
     </div>
 
-
+    <!--footer-->
     <section class="footer">
 
         <div class="box-container">
@@ -370,10 +394,10 @@
             <div class="box">
                 <h3>Links</h3>
                 <a href="#">inicio</a>
-                <a href="#">sobre</a>
-                <a href="#">unidades</a>
-                <a href="#">serviços</a>
-                <a href="#">planos</a>
+                <a href="#sobre">sobre</a>
+                <a href="#unidades">unidades</a>
+                <a href="#modalidade">modalidades</a>
+                <a href="#plano">planos</a>
             </div>
 
             <div class="box">

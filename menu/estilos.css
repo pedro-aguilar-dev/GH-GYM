@@ -105,6 +105,7 @@ body {
     text-decoration: none;
     font-size: 2rem;
     letter-spacing: 2px;
+    padding-left: 0.9rem;
 }
 
 
@@ -153,5 +154,21 @@ nav ul .active {
     .nav__link {
         font-size: 1rem;
         letter-spacing: none;
+    }
+
+
+}
+
+@media(max-width:768px) {
+    .homepage ul {
+        margin-bottom: 35.5rem;
+        position: absolute;
+        background: black;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .homepage ul li a {
+        font-size: 1.6rem;
     }
 }
