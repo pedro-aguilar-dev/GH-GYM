@@ -1,0 +1,160 @@
+:root {
+    --cor: #18181C;
+}
+
+
+
+.light-theme {
+    --cor: rgb(160, 153, 153);
+}
+
+.icon {
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: var(--cor);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: #ffffffc9;
+    padding: 40px 30px;
+    width: 50%;
+    min-height: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.15);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.container .row input[type="range"] {
+    width: 70%;
+    height: 3.5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #dcddcddc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.container .row input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #EB2139;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container .row span {
+    font-weight: 600;
+}
+
+.container #result {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #0be881;
+}
+
+.container #category {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+
+.modalidade .boxcontainer .box img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.balao {
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 1.8rem;
+}
+
+.balao::after {
+    content: "";
+    width: 0.1rem;
+    height: 0.1rem;
+    display: block;
+    position: absolute;
+    left: 3.5rem;
+    bottom: 14rem;
+    background-color: transparent;
+    border: 1.3rem solid;
+    border-color: transparent rgba(0, 0, 0, 0.749) rgba(0, 0, 0, 0.749) transparent;
+    transform: rotate(45deg);
+}
+
+a img {
+    display: flex;
+    justify-content: flex-start
+}
+
+@media (max-width: 468px) {
+    .container {
+        width: 100%;
+        top: 40%;
+        height: auto;
+        background-color: transparent;
+
+    }
+
+
+    @media (min-width: 412px),
+    (max-width: 412px) {
+        .container {
+            top: 37%
+        }
+
+    }
+
+    @media (max-width: 360px) {
+        .container {
+            top: 53%
+        }
+
+    }
+
+    @media (max-width: 320px) {
+        .container {
+            top: 56%
+        }
+
+    }
+
+
+
+
+
+    body {
+        background-color: #ffffffc9;
+    }
+
+}
