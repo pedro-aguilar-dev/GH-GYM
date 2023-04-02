@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styleMatricula.css" />
+</head>
+
+<body>
+    <li class="nav__item">
+        <img src="../imgs/moon.png" class="icon" id="icon" class="icon" height="30rem" , width="30rem">
+    </li>
+    <div class="imagem">
+        <img src="../imgs/matricula.svg">
+    </div>
+    <div class="container">
+        <div class="title">
+            <p>Matricula</p>
+        </div>
+
+        <form action="#">
+            <div class="dados">
+                <div class="input_box">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Nome" required>
+                </div>
+                <div class="input_box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input_box">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="tel" placeholder="Telefone" required>
+                </div>
+                <div class="input_box">
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input type="date" id="data" placeholder="00/00/0000" required>
+                </div>
+                <div class="input_box">
+                    <label for="pass">CEP</label>
+                    <input type="text" id="cep" placeholder="CEP" required>
+                </div>
+            </div>
+            <div class="genero">
+                <span class="generoTitulo">Genêro</span>
+                <input type="radio" name="gender" id="radio_1">
+                <input type="radio" name="gender" id="radio_2">
+                <input type="radio" name="gender" id="radio_3">
+
+                <div class="categoria">
+                    <label for="radio_1">
+                        <span class="dot one"></span>
+                        <span>Masculino</span>
+                    </label>
+                    <label for="radio_2">
+                        <span class="dot two"></span>
+                        <span>Feminino</span>
+                    </label>
+                    <label for="radio_3">
+                        <span class="dot three"></span>
+                        <span>Outro</span>
+                    </label>
+                </div>
+            </div>
+            <div class="reg_btn">
+                <input type="submit" value="Enviar">
+            </div>
+
+            <div class="volt_btn">
+                <button><a href="../index.html">Voltar</a></button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("light-theme");
+        }
+
+    </script>
+</body>
