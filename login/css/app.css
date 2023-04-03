@@ -319,6 +319,10 @@ form.sign-up-form {
         transition: 2s ease-in-out;
     }
 
+    .icon {
+        visibility: hidden;
+    }
+
     .login {
         width: 100%;
         left: 50%;
@@ -402,8 +406,8 @@ form.sign-up-form {
         padding: 0 1.5rem;
     }
 
-    .image {
-        display: none;
+    .container:before {
+        top: 73.3%
     }
 
     .panel .content {
@@ -422,5 +426,12 @@ form.sign-up-form {
     .container.sign-up-mode:before {
         bottom: 28%;
         left: 50%;
+    }
+}
+
+@media (max-width:576px),
+(max-width: 576px) {
+    .container:before {
+        display: none;
     }
 }

@@ -213,6 +213,7 @@ form .genero {
 
     .dados {
         max-height: 340px;
+        width: 100%;
         overflow-y: scroll;
 
     }

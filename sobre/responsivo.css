@@ -48,7 +48,7 @@
 @media (max-width: 768px) {
     .linha {
         width: 90%;
-        margin-left: 3rem
+        margin-left: 2rem
     }
 
     .linha .conteudoContainer h2 {

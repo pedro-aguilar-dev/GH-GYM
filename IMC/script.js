@@ -1,55 +1,55 @@
 function calc() {
 
     let imc;
-    let result = document.getElementById("result");
-    let category = document.getElementById("category");
+    let resultado = document.getElementById("resultado");
+    let categoria = document.getElementById("categoria");
 
-    let weight = parseInt(document.getElementById("weight").value);
-    document.getElementById("weVal").textContent = weight + "kg";
+    let peso = parseInt(document.getElementById("peso").value);
+    document.getElementById("pesoVal").textContent = peso + "kg";
 
 
-    let height = parseInt(document.getElementById("height").value);
-    document.getElementById("heVal").textContent = height + "cm";
+    let altura = parseInt(document.getElementById("altura").value);
+    document.getElementById("alturaVal").textContent = altura + "cm";
 
-    imc = (weight / Math.pow((height / 100), 2)).toFixed();
-    result.textContent = imc;
+    imc = (peso / Math.pow((altura / 100), 2)).toFixed();
+    resultado.textContent = imc;
 
 
     if (imc < 16) {
 
-        category.innerText = "Magreza Grau III";
-        result.style.color = "orange";
+        categoria.innerText = "Magreza Grau III";
+        resultado.style.color = "orange";
     } else if (imc >= 16 && imc <= 16.9) {
 
-        category.innerText = "Magreza Grau II";
-        result.style.color = "#0be881";
+        categoria.innerText = "Magreza Grau II";
+        resultado.style.color = "#0be881";
     } else if (imc >= 17 && imc <= 18.4) {
 
-        category.innerText = "Magreza Grau I";
-        result.style.color = "#ff884d";
+        categoria.innerText = "Magreza Grau I";
+        resultado.style.color = "#ff884d";
     } else if (imc >= 18.5 && imc <= 24.9) {
 
-        category.innerText = "Normal";
-        result.style.color = "green";
+        categoria.innerText = "Normal";
+        resultado.style.color = "green";
     }
     else if (imc >= 25 && imc <= 29.9) {
 
-        category.innerText = "Sobrepeso";
-        result.style.color = "red";
+        categoria.innerText = "Sobrepeso";
+        resultado.style.color = "red";
     }
     else if (imc >= 30 && imc <= 34.9) {
 
-        category.innerText = "Obesidade Grau I";
-        result.style.color = "red";
+        categoria.innerText = "Obesidade Grau I";
+        resultado.style.color = "red";
     }
     else if (imc >= 35 && imc <= 40) {
 
-        category.innerText = "Obesidade Grau II";
-        result.style.color = "red";
+        categoria.innerText = "Obesidade Grau II";
+        resultado.style.color = "red";
     }
     else
 
-        category.innerText = "Obesidade Grau III";
+        categoria.innerText = "Obesidade Grau III";
 
 
 

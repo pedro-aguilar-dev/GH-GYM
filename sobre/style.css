@@ -24,6 +24,7 @@
 
 
 
+
 body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -120,7 +121,7 @@ body {
     line-height: 25px;
     padding-bottom: 25px;
     text-transform: initial;
-    text-align:justify;
+    text-align: justify;
 
 }
 
