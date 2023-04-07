@@ -1,16 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
+    --corheading: #18181C;
+    --corSpan: white;
+    --preto: #393939;
+    --preto2: #111111;
+    --teste: #111111;
     --blue: #EB2139;
-    --cor: #18181C;
+    --cinza: #18181C;
+    --cinza2: #18181C;
+    --corFooter: #0A0A0A;
     --corTextoFooter: white;
+    --whiteLista: white;
 }
 
 
 
 .light-theme {
+    --corheading: white;
+    --cinza2: #003163;
+    --teste: white;
+    --corSpan: #003163;
+    --corFooter: #003163;
+    --cinza: #ffff;
+    --preto: white;
     --cor: rgb(160, 153, 153);
-    --corTextoFooter: black;
+    --corTextoFooter: rgb(255, 255, 255);
 }
 
 * {
@@ -41,14 +58,16 @@ html {
 }
 
 .btn {
+    box-shadow: black 7px 7px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     padding: .7rem 2rem;
-    color: #fff;
+    color: #ffffff;
     background: var(--blue);
     cursor: pointer;
     margin-top: 1rem;
     border: none;
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+
 }
 
 .btn:hover {
@@ -60,16 +79,15 @@ html {
     text-align: center;
     padding: 1rem;
     padding-top: 6.5rem;
-    background-color: var(--cor);
+    background-color: var(--corheading);
 }
 
 .heading span {
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     padding: .5rem 7rem;
-    color: #444;
-    background: #fff;
-    border: .2rem solid var(--blue);
+    color: var(--corSpan);
+    font-family: 'Poppins', sans-serif;
     border-left-width: 1rem;
     border-right-width: 1rem;
 
@@ -165,24 +183,38 @@ header #menu {
 }
 
 .modalidade {
-    background-color: var(--cor);
+    background-color: var(--whiteLista);
 
 }
 
 .modalidade .box-container {
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--cor);
+    background-color: var(--teste);
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 
 }
 
+.box1 {}
+
 .modalidade .box-container .box {
-    text-align: center;
+    text-align: left;
+    width: 30rem;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: var(--cinza2);
+    /*border: .40rem solid #EB2139;*/
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.modalidade .box-container .box1 {
+    text-align: left;
     width: 30rem;
     padding: 2rem;
     margin: 2rem;
@@ -199,13 +231,15 @@ header #menu {
 }
 
 .modalidade .box-container .box h3 {
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    color: #444;
+    color: var(--blue);
 }
 
 .modalidade .box-container .box p {
-    font-size: 1.2rem;
-    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
     padding: 1rem;
 }
 
@@ -230,7 +264,7 @@ header #menu {
 
 .plano {
 
-    background: var(--cor);
+    background: var(--preto2);
 }
 
 .plano .box-container {
@@ -242,7 +276,7 @@ header #menu {
 
 .plano .box-container .box {
     margin: 2rem;
-    background: #fff;
+    background: var(--cinza2);
     text-align: center;
     width: 30rem;
     border: .40rem solid #EB2139;
@@ -250,6 +284,7 @@ header #menu {
 }
 
 .plano .box-container .box .titulo {
+    font-family: 'Poppins', sans-serif;
     background: var(--blue);
     color: #fff;
     font-size: 2.7rem;
@@ -257,7 +292,8 @@ header #menu {
 }
 
 .plano .box-container .box .preco {
-    color: #444;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--whiteLista);
     font-size: 3.5rem;
     padding: 1.5rem 0;
 }
@@ -274,9 +310,10 @@ header #menu {
 }
 
 .plano .box-container .box .lista li {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     padding: .5rem 0;
-    color: #666;
+    color: var(--whiteLista);
 }
 
 .plano .box-container .box .lista li .fa-check {
@@ -299,7 +336,7 @@ header #menu {
 
 
 .footer {
-    background: var(--cor);
+    background: var(--corFooter);
 
 }
 
@@ -315,6 +352,7 @@ header #menu {
 }
 
 .footer .box-container .box h3 {
+    font-family: 'Poppins', sans-serif;
     color: #EB2139;
     font-size: 2.5rem;
 }
@@ -330,6 +368,7 @@ header #menu {
 }
 
 .footer .box-container .box a {
+    font-family: 'Montserrat', sans-serif;
     color: var(--corTextoFooter);
     font-size: 1.8rem;
     padding: .5rem 0;
@@ -465,12 +504,6 @@ header #menu {
         width: 90vw;
     }
 
-    .screen-slider {
-        width: 90%;
-    }
 
-    .review .review-slider {
-        width: auto;
-    }
 
 }

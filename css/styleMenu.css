@@ -1,3 +1,32 @@
+:root {
+    --corAnim: #EB2139;
+    --corSpan: white;
+    --preto: #393939;
+    --preto2: #111111;
+    --teste: #111111;
+    --blue: #EB2139;
+    --cinza: #18181C;
+    --cinza2: #18181C;
+    --corFooter: #0A0A0A;
+    --corTextoFooter: white;
+    --whiteLista: white;
+}
+
+
+
+.light-theme {
+    --corAnim: #0060c0;
+    --teste: white;
+    --corSpan: #0060c0;
+
+    --corFooter: #003163;
+    --cinza: #ffff;
+    --preto: white;
+    --cor: rgb(160, 153, 153);
+    --corTextoFooter: rgb(255, 255, 255);
+}
+
+
 .homepage {
     height: 97vh;
     background-image: url("../imgs/teste1.png");
@@ -15,9 +44,6 @@
 
 }
 
-
-
-
 .typed h1 {
     position: absolute;
     top: 50%;
@@ -29,7 +55,7 @@
 }
 
 .typed span {
-    color: #eb2139;
+    color: var(--corAnim);
 }
 
 .social {
@@ -58,7 +84,6 @@
     border-color: rgba(0, 0, 0, 0.649);
 
 }
-
 
 @media (max-width: 768px) {
     .social {

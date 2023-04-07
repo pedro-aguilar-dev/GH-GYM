@@ -17,7 +17,7 @@ body {
 .hero {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
-        url('./assets/hero.jpg');
+        url('../imgs/hero.jpg');
     background-size: cover;
     min-height: 500px;
     height: 100vh;
@@ -46,6 +46,12 @@ body {
     font-size: 2.5rem;
     z-index: 1;
     margin-bottom: 36rem;
+}
+
+.nav__logo1 {
+    font-size: 2.5rem;
+    z-index: 1;
+
 }
 
 .nav__hamburguer,
@@ -86,6 +92,14 @@ body {
 
     transform: var(--state-menu);
     transition: .3s transform;
+}
+
+.btn_Theme {
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__item {

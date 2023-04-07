@@ -5,7 +5,6 @@
 }
 
 
-
 .light-theme {
     --cor: rgb(160, 153, 153);
 }
@@ -16,7 +15,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     display: flex;
@@ -213,7 +211,6 @@ form .genero {
 
     .dados {
         max-height: 340px;
-        width: 100%;
         overflow-y: scroll;
 
     }
@@ -245,6 +242,7 @@ form .genero {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: -1.5rem
     }
 
 

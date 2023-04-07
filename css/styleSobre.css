@@ -3,15 +3,24 @@
 
 
 :root {
+    --btnCor: #EB2139;
+    --corP: white;
+    --corText: #EB2139;
+    --preto: #0A0A0A;
+    --preto2: #111111;
     --blue: #EB2139;
-    --cor: #18181C;
+    --cinza: #18181C;
     --corFonte: white;
     --corH2: white;
 }
 
 .light-theme {
+    --btnCor: #003163;
+    --corP: black;
+    --corText: #003163;
+    --preto2: white;
     --cor: rgb(160, 153, 153);
-    --corFonte: #444444;
+    --corFonte: #EB2139;
     --corH2: black;
 }
 
@@ -22,9 +31,6 @@
     outline: none;
 }
 
-
-
-
 body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -34,23 +40,32 @@ body {
 }
 
 .Background {
-    background-color: var(--cor);
+    background-color: var(--cinza);
+}
+
+.m {
+    background-color: var(--preto2);
 }
 
 .linha {
 
     width: 80%;
-    max-width: 1170px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     overflow-x: hidden;
     padding: 5rem 0;
-    margin-left: 42.2rem;
+    align-self: center;
+
+    /*margin-left: 42.2rem;*/
 
 }
 
-.linha .conteudoContainer .conteudo {}
+.linha .conteudoContainer .conteudo {
+    left: 400px;
+
+}
 
 .linha .img {
     overflow: hidden;
@@ -68,6 +83,7 @@ body {
 }
 
 .linha .conteudoContainer {
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -88,8 +104,6 @@ body {
 }
 
 
-
-
 .linha .conteudoContainer span.textWrapper span {
     display: inline-block;
     background: #d31c3b;
@@ -97,26 +111,18 @@ body {
     height: 5px;
 }
 
-.linha .conteudoContainer h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--corH2);
-    padding-bottom: 0px;
-}
-
 .linha .conteudoContainer h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 700;
-    color: #EB2139;
+    color: var(--corText);
 
     padding-bottom: 20px;
 }
 
 .linha .conteudoContainer p {
     font-family: 'DM Sans', sans-serif;
-    color: var(--corFonte);
+    color: var(--corP);
     font-size: 20px;
     line-height: 25px;
     padding-bottom: 25px;
@@ -125,17 +131,80 @@ body {
 
 }
 
-/*ButtonMatriculise*/
+.linha .conteudoContainer h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--corFonte);
+    font-size: 40px;
+    line-height: 25px;
+    padding-bottom: 25px;
+    text-transform: initial;
+    text-align: justify;
+
+}
+
+/*ButtonMatricula*/
 .linha .conteudoContainer a {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     box-shadow: 7px 7px black;
 
-    background: #EB2139;
+    background: var(--btnCor);
     color: #fff;
     padding: 15px 40px;
     letter-spacing: 1px;
     user-select: none;
     font-size: 1.2rem;
+}
+
+
+/*media queries
+@media (max-width: 991px) {
+    .linha {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        margin-left: 3.2rem
+    }
+
+}
+
+
+@media(min-width:992px),
+(max-width:1024px) {
+    .linha {
+       /* margin-left: 16rem;*/
+
+@media(min-width:769px) and (max-width:1140px) {
+    .linha {
+        width: 95%;
+
+    }
+
+    .linha .conteudoContainer h2 {
+        font-size: 30px;
+    }
+
+    .linha .img img {
+        padding-left: 7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .linha {
+        width: 90%;
+        margin-left: 3rem
+    }
+
+    .linha .conteudoContainer h2 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    .linha .conteudoContainer p {
+        line-height: 24px;
+    }
+
+    .linha .conteudoContainer {
+        padding-left: 0;
+    }
 }

@@ -1,22 +1,24 @@
 :root {
     --blue: #EB2139;
     --cor: #18181C;
-
+    --corFundo: linear-gradient(180deg, rgba(24, 24, 28, 1) 0%, rgba(17, 17, 17, 1) 100%);
+    --preto2: #111111;
 }
 
 .light-theme {
+    --preto2: #fff;
+    --corFundo: white;
     --cor: white;
 
 }
 
 
 body {
+    background-color: var(--preto2);
     font-family: Verdana, sans-serif;
     margin: 0;
 
 }
-
-
 
 .containerSlide {
 
@@ -28,6 +30,7 @@ body {
     align-self: center;
     justify-content: center;
     background: var(--cor);
+    background: var(--corFundo);
 }
 
 /* Slideshow container */
@@ -116,8 +119,6 @@ body {
         padding-top: 20px;
 
     }
-
-
 
     .imagem {
         vertical-align: middle;

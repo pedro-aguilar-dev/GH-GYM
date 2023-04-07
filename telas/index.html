@@ -4,24 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
+    <title>GH GYM</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
     <!-- css link  -->
-    <link rel="stylesheet" href="./css/styleMenu.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="../css/styleMenu.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./sobre/style.css">
-    <link rel="stylesheet" href="./sobre/responsivo.css">
-    <link rel="stylesheet" href="./menu/estilos.css">
-    <link rel="stylesheet" href="./css/styleSlide.css">
-    <link rel="stylesheet" href="./css/styleContato.css">
+    <link rel="stylesheet" href="../css/styleSobre.css">
+    <link rel="stylesheet" href="../css/styleMenu2.css">
+    <link rel="stylesheet" href="../css/styleSlide.css">
+    <link rel="stylesheet" href="../css/styleContato.css">
 
 
 </head>
@@ -30,7 +29,7 @@
 
     <div class="homepage">
         <nav class="nav container" id="nav">
-            <img class="nav__logo" src="./imgs/Logo Gh Gym Arnold Branco.png" height="120rem" width="120rem">
+            <img class="nav__logo" src="../imgs/Logo Gh Gym Arnold Branco.png" height="120rem" width="120rem">
 
             <ul class="nav__links">
 
@@ -46,11 +45,11 @@
                 </li>
 
                 <li class="nav__item">
-                    <a href="./login/index.html" class="nav__link">Login</a>
+                    <a href="../telas/login.html" class="nav__link">Login</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./IMC/index.html" class="nav__link">IMC</a>
+                    <a href="../telas/imc.html" class="nav__link">IMC</a>
                 </li>
 
 
@@ -62,17 +61,18 @@
                     <a href="#modalidade" class="nav__link">Modalidades</a>
                 </li>
                 <li class="nav__item">
-                    <img src="./imgs/sun.png" id="icon">
+                    <img src="../imgs/sun.png" id="icon">
+                    <p>theme</p>
                 </li>
 
             </ul>
 
             <a href="#nav" class="nav__hamburguer">
-                <img src="./menu/assets/menu.svg" class="nav__icon">
+                <img src="../imgs/menu.svg" class="nav__icon">
             </a>
 
             <a href="#" class="nav__close">
-                <img src="./menu/assets/close.svg" class="nav__icon">
+                <img src="../imgs/close.svg" class="nav__icon">
             </a>
 
         </nav>
@@ -86,13 +86,14 @@
             <i class="fa fa-facebook"></i>
             <i class="fa fa-instagram"></i>
             <i class="fa fa-twitter"></i>
+
         </div>
 
     </div>
 
 
 
-    <script src="./scripts/scriptMenu.js"></script>
+    <script src="../scripts/scriptMenu.js"></script>
 
     <script type="text/javascript">
         var typed = new Typed('.type', {
@@ -114,12 +115,6 @@
             document.body.classList.toggle("light-theme");
         }
 
-
-        var btn = document.getElementsByClassName("nav__hamburguer");
-        btn.onclick = function () {
-            document.body.classList.remove("typed");
-        }
-
     </script>
 
     <!--home-->
@@ -127,7 +122,7 @@
         <div class="Background">
             <div class="linha">
                 <div class="img">
-                    <img src="./imgs/Academia MetroFlex.jpg" alt="">
+                    <img src="../imgs/Academia MetroFlex.jpg" alt="">
                 </div>
                 <div class="conteudoContainer">
                     <div class="conteudo">
@@ -143,7 +138,7 @@
                             Em 2016, lapidamos o conceito da marca, nos tornando: GH GYM, a sua academia. Uma rede com
                             equipamentos modernos, estrutura de ponta, equipe treinada, horário de atendimento estendido
                             e grade de aulas com mais de 30 modalidades como danças, lutas, ginástica.</p>
-                        <a href="./matricula/index.html">Matricule-se</a>
+                        <a href="../telas/matricula.html">Matricule-se</a>
                     </div>
                 </div>
             </div>
@@ -151,25 +146,25 @@
 
     <!--unidades-->
     <section id="unidades">
-        <h1 class="heading"><span>Unidades</span></h1>
+        <h1 class="heading"><span>NOSSAS UNIDADES</span></h1>
 
         <div class="containerSlide">
             <div class="content-slide">
                 <div class="imgslide fade">
                     <div class="numeroslide">1 / 3</div>
-                    <img class="imagem" src="./imgs/Academia MetroFlex.jpg" alt="">
+                    <img class="imagem" src="../imgs/Academia MetroFlex.jpg" alt="">
                     <div class="text">Osasco</div>
                 </div>
 
                 <div class="imgslide fade">
                     <div class="numeroslide">2 / 3</div>
-                    <img class="imagem" src="./imgs/red7.jpg" alt="">
+                    <img class="imagem" src="../imgs/gym7-1200x600.jpg" alt="">
                     <div class="text">Campinas</div>
                 </div>
 
                 <div class="imgslide fade">
                     <div class="numeroslide">3 / 3</div>
-                    <img class="imagem" src="./imgs/red8.jpg" alt="">
+                    <img class="imagem" src="../imgs/Gym-Pic.jpg" alt="">
                     <div class="text">Lapa</div>
                 </div>
 
@@ -234,47 +229,42 @@
     <!--modalidades-->
     <section class="modalidade" id="modalidade">
 
-        <h1 class="heading"><span>Modalidades</span></h1>
+        <h1 class="heading m"><span>MODALIDADES</span></h1>
 
         <div class="box-container">
 
             <div class="box">
-                <img src="./imgs/gym.gif" height="60rem" width="60rem">
-                <h3>Musculação I</h3>
+                <img src="../imgs/treino1.png" height="60rem" width="60rem">
+                <h3>Musculação </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
             <div class="box">
-                <img src="./imgs/gym2.gif" height="60rem" width="60rem">
+                <img src="../imgs/weight-lifting.png" height="60rem" width="60rem">
                 <h3>Crossfit</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
-            <div class="box">
-                <img src="./imgs/gym3.gif" height="60rem" width="60rem">
-                <h3>Musculação II</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
-                    architecto reiciendis fugit libero sunt.</p>
-            </div>
+
 
             <div class="box">
-                <img src="./imgs/exercise (4).png" height="60rem" width="60rem">
+                <img src="../imgs/esteira.png" height="60rem" width="60rem">
                 <h3>HIT</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
             <div class="box">
-                <img src="./imgs/zumba.png" height="60rem" width="60rem">
+                <img src="../imgs/zumba.png" height="60rem" width="60rem">
                 <h3>Zumba</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
             </div>
 
             <div class="box">
-                <img src="./imgs/sport.png" height="60rem" width="60rem">
+                <img src="../imgs/sport.png" height="60rem" width="60rem">
                 <h3>Muay Thai</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga alias ea quis repudiandae modi
                     architecto reiciendis fugit libero sunt.</p>
@@ -287,13 +277,13 @@
     <!--planos-->
     <section class="plano" id="plano">
 
-        <h1 class="heading"><span>Planos</span></h1>
+        <h1 class="heading m"><span>NOSSOS PLANOS</span></h1>
 
         <div class="box-container">
 
             <div class="box">
                 <h3 class="titulo">Plano Basic</h3>
-                <h3 class="preco">$10<span>mes</span></h3>
+                <h3 class="preco">R$59,90<span>mes</span></h3>
                 <ul class="lista">
                     <li> <i class="fas fa-check"></i>Sem multas ou taxa</li>
                     <li> <i class="fas fa-check"></i>Acesso a todas as aulas coletivas</li>
@@ -301,12 +291,12 @@
                     <li> <i class="fas fa-times"></i>Acesso total a estrutura</li>
                     <li> <i class="fas fa-times"></i>Sem restrição de horário</li>
                 </ul>
-                <a href="#"><button class="btn">Selecionar</button></a>
+                <a href="./telas/pagamento.html"><button class="btn">Selecionar</button></a>
             </div>
 
             <div class="box">
                 <h3 class="titulo">Plano Gold</h3>
-                <h3 class="preco">$20<span>mes</span></h3>
+                <h3 class="preco">R$69,90<span>mes</span></h3>
                 <ul class="lista">
                     <li> <i class="fas fa-check"></i>Sem restrição de horário</li>
                     <li> <i class="fas fa-check"></i>Leve até 5 amigos para treinar</li>
@@ -314,13 +304,13 @@
                     <li> <i class="fas fa-times"></i>Sem taxa de matricula</li>
                     <li> <i class="fas fa-times"></i>Acesso a eventos</li>
                 </ul>
-                <a href="#"><button class="btn">Selecionar</button></a>
+                <a href="./telas/pagamento.html"><button class="btn">Selecionar</button></a>
 
             </div>
 
             <div class="box">
                 <h3 class="titulo">Plano Diamond</h3>
-                <h3 class="preco">$30<span>mes</span></h3>
+                <h3 class="preco">R$79,90<span>mes</span></h3>
                 <ul class="lista">
                     <li> <i class="fas fa-check"></i>Sem taxa de matricula</li>
                     <li> <i class="fas fa-check"></i>Acesso total a estrutura</li>
@@ -328,7 +318,7 @@
                     <li> <i class="fas fa-check"></i>Leve 8 amigos para treinar</li>
                     <li> <i class="fas fa-check"></i>Acesso a eventos</li>
                 </ul>
-                <a href="#"><button class="btn">Selecionar</button></a>
+                <a href="./telas/pagamento.html"><button class="btn">Selecionar</button></a>
             </div>
 
         </div>
@@ -337,7 +327,7 @@
 
 
     <!--contato-->
-    <h1 class="heading" id="contato"><span>Contato</span></h1>
+    <h1 class="heading m" id="contato"><span>CONTATOS</span></h1>
     <div class="containerContato">
         <div class="contatoEmpresa">
             <ul>
@@ -379,6 +369,8 @@
             </form>
         </div>
     </div>
+    </br>
+    </br>
 
     <!--footer-->
     <section class="footer">
@@ -386,23 +378,36 @@
         <div class="box-container">
 
             <div class="box">
-                <h3>Sobre Nós</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, facere iusto excepturi at
-                    modi illo tenetur atque fugiat numquam rerum.</p>
+                <img class="nav__logo1" src="../imgs/Logo Gh Gym Arnold Branco.png" height="120rem" width="120rem">
+
+
             </div>
 
+
+            <div class="box1">
+
+
+            </div>
             <div class="box">
                 <h3>Links</h3>
                 <a href="#">inicio</a>
                 <a href="#sobre">sobre</a>
                 <a href="#unidades">unidades</a>
-                <a href="#modalidade">modalidades</a>
-                <a href="#plano">planos</a>
+
             </div>
 
             <div class="box">
+                <h3>Links</h3>
+                <a href="#modalidade">modalidades</a>
+                <a href="#plano">planos</a>
+                <a href="#calculadoraimc">calculadora imc</a>
+            </div>
+
+            <div class="box">
+
                 <p>Receba novidades via email</p>
                 <form action="">
+
                     <input type="email" placeholder="insira o email">
                     <button class="fas fa-paper-plane"></button>
                 </form>

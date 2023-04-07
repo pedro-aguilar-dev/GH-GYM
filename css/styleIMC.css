@@ -1,17 +1,24 @@
 :root {
-    --cor: #18181C;
+    --cor: #0A0A0A;
+    --corContainer: #18181C;
 }
 
-
-
 .light-theme {
-    --cor: rgb(160, 153, 153);
+    --cor: rgb(255, 255, 255);
+    --corContainer: #003163;
 }
 
 .icon {
-    margin-top: 3rem;
+    background-color: var(--corContainer);
+    width: 60px;
+    height: 60px;
+    padding: 10px 10px;
+    margin-left: 5rem;
+    border-radius: 30px;
+    margin-top: 4rem;
     cursor: pointer;
 }
+
 
 * {
     margin: 0;
@@ -27,7 +34,7 @@ body {
 }
 
 .container {
-    background-color: #ffffffc9;
+    background-color: var(--corContainer);
     padding: 40px 30px;
     width: 50%;
     min-height: 400px;
@@ -68,10 +75,11 @@ body {
 }
 
 .container .row span {
+    color: #EB2139;
     font-weight: 600;
 }
 
-.container #resultado {
+.container #result {
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -79,7 +87,8 @@ body {
     color: #0be881;
 }
 
-.container #categoria {
+.container #category {
+    color: white;
     font-size: 18px;
     letter-spacing: 1px;
     text-align: center;
@@ -94,7 +103,7 @@ body {
 
 .balao {
     padding: 2rem;
-    border: 2px solid black;
+    border: 2px solid#ffffff;
     border-radius: 1.8rem;
 }
 
@@ -108,7 +117,7 @@ body {
     bottom: 14rem;
     background-color: transparent;
     border: 1.3rem solid;
-    border-color: transparent rgba(0, 0, 0, 0.749) rgba(0, 0, 0, 0.749) transparent;
+    border-color: transparent #a1a1a1 #a1a1a1 transparent;
     transform: rotate(45deg);
 }
 
@@ -148,9 +157,6 @@ a img {
         }
 
     }
-
-
-
 
 
     body {

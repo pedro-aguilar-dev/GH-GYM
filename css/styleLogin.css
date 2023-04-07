@@ -10,7 +10,7 @@
 :root {
     --cor: #18181C;
     --corBtn: #cac9c9;
-    --corEsfera: rgb(160, 153, 153);
+    --corEsfera: #0A0A0A;
     --white: #fff;
     --black: black
 }
@@ -18,7 +18,7 @@
 
 
 .light-theme {
-    --cor: rgb(160, 153, 153);
+    --cor: rgb(255, 255, 255);
     --corEsfera: #18181C;
     --corBtn: #18181C;
     --white: black;
@@ -92,10 +92,6 @@ form.login-form {
     z-index: 2;
 }
 
-form.sign-up-form {
-    z-index: 1;
-    opacity: 0;
-}
 
 .titulo {
     font-size: 2.2rem;
@@ -261,45 +257,7 @@ form.sign-up-form {
     transform: translateX(800px);
 }
 
-/* ANIMATION sTYLING */
 
-.container.sign-up-mode:before {
-    transform: translate(100%, -50%);
-    right: 52%;
-}
-
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
-    transform: translateX(-800px);
-}
-
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
-    transform: translateX(0px);
-
-}
-
-.container.sign-up-mode .left-panel {
-    pointer-events: none;
-}
-
-.container.sign-up-mode .right-panel {
-    pointer-events: all;
-}
-
-.container.sign-up-mode .login {
-    left: 25%;
-}
-
-.container.sign-up-mode form.login-form {
-    z-index: 1;
-    opacity: 0;
-}
-
-.container.sign-up-mode form.sign-up-form {
-    z-index: 2;
-    opacity: 1;
-}
 
 /* Responsiveness */
 @media (max-width: 768px) {
@@ -317,10 +275,6 @@ form.sign-up-form {
         right: initial;
         top: initial;
         transition: 2s ease-in-out;
-    }
-
-    .icon {
-        visibility: hidden;
     }
 
     .login {
@@ -382,22 +336,6 @@ form.sign-up-form {
         transform: translateY(300px);
     }
 
-    .container.sign-up-mode:before {
-        transform: translate(-50%, 100%);
-        bottom: 32%;
-        right: initial;
-    }
-
-    .container.sign-up-mode .left-panel .image,
-    .container.sign-up-mode .left-panel .content {
-        transform: translateY(-300px);
-    }
-
-    .container.sign-up-mode .login {
-        top: 5%;
-        transform: translate(-50%, 0);
-        left: 50%;
-    }
 }
 
 
@@ -406,8 +344,8 @@ form.sign-up-form {
         padding: 0 1.5rem;
     }
 
-    .container:before {
-        top: 73.3%
+    .image {
+        display: none;
     }
 
     .panel .content {
@@ -423,15 +361,5 @@ form.sign-up-form {
         left: 50%;
     }
 
-    .container.sign-up-mode:before {
-        bottom: 28%;
-        left: 50%;
-    }
-}
 
-@media (max-width:576px),
-(max-width: 576px) {
-    .container:before {
-        display: none;
-    }
 }
