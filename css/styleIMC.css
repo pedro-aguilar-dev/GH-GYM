@@ -131,7 +131,7 @@ a img {
         width: 100%;
         top: 40%;
         height: auto;
-        background-color: transparent;
+
 
     }
 
@@ -159,8 +159,5 @@ a img {
     }
 
 
-    body {
-        background-color: #ffffffc9;
-    }
 
 }
