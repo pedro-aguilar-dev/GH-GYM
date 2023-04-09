@@ -249,8 +249,18 @@ body {
     }
 
     .linha {
-        margin-left: 11rem;
+        margin-left: 9.6rem;
         width: 100%;
+    }
+
+    .linha .conteudoContainer a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .linha .conteudoContainer p {
+        text-align: justify;
+
     }
 
 
